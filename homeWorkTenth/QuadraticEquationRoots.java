@@ -14,7 +14,7 @@ public class QuadraticEquationRoots {
         double greaterNumber = getAbsMaxValue(b, c);
 
         for (double i = greaterNumber * (-1); i < greaterNumber; i++) {
-            for (double j = i + 1; j < greaterNumber; j++) {
+            for (double j = i; j < greaterNumber; j++) {
                 if (i + j == ((-1) * b) && i * j == c) {
                     firstRoot = i;
                     secondRoot = j;
