@@ -1,0 +1,63 @@
+
+		New game!
+Round #1
+
+User chose Rock
+Machine chose Scissors
+This round User won!
+Score is User 1:0 Machine
+Round #2
+
+User chose Rock
+Machine chose Paper
+This round User lost!
+Score is User 1:1 Machine
+Round #3
+
+User chose Rock
+Machine chose Scissors
+This round User won!
+Score is User 2:1 Machine
+Round #4
+
+User chose Rock
+Machine chose Paper
+This round User lost!
+Score is User 2:2 Machine
+Round #5
+
+User chose Rock
+Machine chose Scissors
+This round User won!
+Score is User 3:2 Machine
+Final score is 3:2
+
+
+		New game!
+Round #1
+
+User chose Scissors
+Machine chose Scissors
+Score is User 0:0 Machine
+Round #2
+
+User chose Paper
+Machine chose Paper
+Score is User 0:0 Machine
+Round #3
+
+User chose Scissors
+Machine chose Paper
+This round User won!
+Score is User 1:0 Machine
+Round #4
+
+User chose Rock
+Machine chose Scissors
+This round User won!
+Score is User 2:0 Machine
+Round #5
+
+Game was abandon. Score is 2:1
+Final score is 2:1
+
