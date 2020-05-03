@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Test;
 import yarchuk.Converter;
+import yarchuk.WorkWithFiles;
 
 import java.io.IOException;
 
@@ -7,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ConverterTest {
 
+    private final WorkWithFiles file = new WorkWithFiles();
     private String expectedJson = "{\"doe\":\"a deer, a female deer\",\"ray\":\"a drop of golden sun\",\"pi\":3.14159,\"xmas\":true,\"french-hens\":3,\"calling-birds\":[\"huey\",\"dewey\",\"louie\",\"fred\"],\"xmas-fifth-day\":{\"calling-birds\":\"four\",\"french-hens\":3,\"golden-rings\":5,\"partridges\":{\"count\":1,\"location\":\"a pear tree\"},\"turtle-doves\":\"two\"}}\n";
     private String expectedYaml = "---\n" +
             "doe: \"a deer, a female deer\"\n" +
@@ -37,7 +39,7 @@ public class ConverterTest {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        String actual = converter.fileToString("src\\test\\test.yaml");
+        String actual = file.fileToString("src\\test\\test.yaml");
 
         assertEquals(expectedYaml, actual);
     }
@@ -50,7 +52,7 @@ public class ConverterTest {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        String actual = converter.fileToString("src\\test\\secondTest.json");
+        String actual = file.fileToString("src\\test\\secondTest.json");
 
         assertEquals(expectedJson, actual);
     }
