@@ -11,7 +11,7 @@ public class StudentService {
 
     private final String URL = "jdbc:postgresql://localhost:5432/University";
     private final String user = "postgres";
-    private final String pass = "nk070780tas";
+    private final String pass = "123456780";
 
     public List<Student> getAllStudents() throws SQLException {
         connection = DriverManager.getConnection(URL, user, pass);
